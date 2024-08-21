@@ -8,11 +8,13 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
 
-
+class _MyAppState extends State<MyApp> {
   List<Widget> pages = [home(), friends(), market(), profile()];
-
   int index = 0;
 
   @override
@@ -20,30 +22,36 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        body: pages[index],
         bottomNavigationBar: BottomNavigationBar(
-          currentIndex: 2,
-            items: [
-          BottomNavigationBarItem(
-            backgroundColor: Colors.red,
-            label: "Home",
-              icon: Icon(Icons.home)
-          ),
-          BottomNavigationBarItem(
+          currentIndex: index,
+          onTap: (value) {
+            setState(() {
+              index = value;
+            });
+          },
+          items: const [
+            BottomNavigationBarItem(
+              backgroundColor: Colors.red,
+              label: "Home",
+              icon: Icon(Icons.home),
+            ),
+            BottomNavigationBarItem(
               backgroundColor: Colors.red,
               label: "Friends",
-              icon: Icon(Icons.supervised_user_circle)
-          ),
-          BottomNavigationBarItem(
-              backgroundColor: Colors.red,
+              icon: Icon(Icons.supervised_user_circle),
+            ),
+            BottomNavigationBarItem(
+              backgroundColor: Colors.redAccent,
               label: "Market",
-              icon: Icon(Icons.shopping_cart)
-          ),
-          BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_cart),
+            ),
+            BottomNavigationBarItem(
               backgroundColor: Colors.red,
               label: "Profile",
-              icon: Icon(Icons.account_box_rounded)
-          ),
-        ]
+              icon: Icon(Icons.account_box_rounded),
+            ),
+          ],
         ),
       ),
     );
