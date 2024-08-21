@@ -5,6 +5,6 @@ class profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text("profile"));
+    return const Center(child: Text("PROFILE"));
   }
 }

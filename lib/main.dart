@@ -32,22 +32,22 @@ class _MyAppState extends State<MyApp> {
           },
           items: const [
             BottomNavigationBarItem(
-              backgroundColor: Colors.red,
+              backgroundColor: Colors.redAccent,
               label: "Home",
               icon: Icon(Icons.home),
             ),
             BottomNavigationBarItem(
-              backgroundColor: Colors.red,
+              backgroundColor: Colors.blue,
               label: "Friends",
               icon: Icon(Icons.supervised_user_circle),
             ),
             BottomNavigationBarItem(
-              backgroundColor: Colors.redAccent,
+              backgroundColor: Colors.green,
               label: "Market",
               icon: Icon(Icons.shopping_cart),
             ),
             BottomNavigationBarItem(
-              backgroundColor: Colors.red,
+              backgroundColor: Colors.orange,
               label: "Profile",
               icon: Icon(Icons.account_box_rounded),
             ),
