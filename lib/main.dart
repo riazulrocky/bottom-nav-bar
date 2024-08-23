@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
           },
           items: const [
             BottomNavigationBarItem(
-              backgroundColor: Colors.redAccent,
+              backgroundColor: Colors.indigo,
               label: "Home",
               icon: Icon(Icons.home),
             ),
