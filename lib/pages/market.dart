@@ -5,6 +5,15 @@ class market extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text("MARKET"));
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+            onPressed: null,
+            child: Text(
+              "Ready to buy?",
+              style: TextStyle(fontSize: 18),
+            )),
+      ),
+    );
   }
 }

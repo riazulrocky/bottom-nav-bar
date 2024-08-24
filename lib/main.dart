@@ -47,7 +47,7 @@ class _MyAppState extends State<MyApp> {
               icon: Icon(Icons.shopping_cart),
             ),
             BottomNavigationBarItem(
-              backgroundColor: Colors.orange,
+              backgroundColor: Colors.indigo,
               label: "Profile",
               icon: Icon(Icons.account_box_rounded),
             ),
