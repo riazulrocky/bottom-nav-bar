@@ -19,7 +19,7 @@ class profile extends StatelessWidget {
             const SizedBox(height: 10),
             Text(
               "RIAZUL HASAN ROCKY",
-              style: GoogleFonts.roboto(
+              style: GoogleFonts.roboto(0410
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
                   color: Colors.indigo),
